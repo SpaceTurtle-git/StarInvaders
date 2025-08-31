@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn0yl0y75n04f"]
+
+[ext_resource type="Script" uid="uid://bqbj4865mwggm" path="res://assets/scripts/mini_block.gd" id="1_oho0h"]
+[ext_resource type="PackedScene" uid="uid://b83xskvs5wdwx" path="res://assets/entity/enemy3.tscn" id="2_5yag5"]
+
+[node name="miniblock3" type="Node2D"]
+script = ExtResource("1_oho0h")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(784, 160)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(544, 160)
+
+[node name="enemy" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(584, 160)
+
+[node name="enemy2" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(664, 160)
+
+[node name="enemy3" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(744, 160)
+
+[node name="enemy4" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(584, 104)
+
+[node name="enemy5" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(664, 104)
+
+[node name="enemy6" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(744, 104)
+
+[node name="enemy7" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(584, 40)
+
+[node name="enemy8" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(664, 40)
+
+[node name="enemy9" parent="." instance=ExtResource("2_5yag5")]
+position = Vector2(744, 40)

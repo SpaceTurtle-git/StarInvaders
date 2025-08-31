@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://i0p2lgjkn1aa"]
+
+[ext_resource type="Script" uid="uid://cbfexmxd6th46" path="res://assets/scripts/score.gd" id="1_fvc5t"]
+[ext_resource type="FontFile" uid="uid://kybocmh5qvoo" path="res://assets/fonts/Minecraft.ttf" id="1_vgmxt"]
+
+[node name="Score" type="Node2D"]
+
+[node name="text" type="Label" parent="."]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("1_vgmxt")
+text = "SCORE:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="mainScore" type="Label" parent="."]
+texture_filter = 1
+offset_left = 146.0
+offset_right = 186.0
+offset_bottom = 23.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("1_vgmxt")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_fvc5t")

@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://dc7m7rl37cgnr"]
+
+[ext_resource type="Script" uid="uid://ege62angq431" path="res://assets/scripts/enemy.gd" id="1_d8mak"]
+[ext_resource type="Texture2D" uid="uid://ctu8snp11c12t" path="res://start-assets/Assets/Invaders/Invader-explosion-1.png" id="2_bo8rc"]
+[ext_resource type="Texture2D" uid="uid://dcoy6mphlfi8i" path="res://start-assets/Assets/Invaders/Invader-explosion-2.png" id="3_51ja3"]
+[ext_resource type="Texture2D" uid="uid://bn227mp3yqjlo" path="res://start-assets/Assets/Invaders/Invader2-1.png" id="4_d8mak"]
+[ext_resource type="Texture2D" uid="uid://gf81hnr41a4c" path="res://start-assets/Assets/Invaders/Invader2-2.png" id="5_bo8rc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_apitr"]
+size = Vector2(152.5, 124)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbhhn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bo8rc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_51ja3")
+}],
+"loop": false,
+"name": &"die",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_d8mak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bo8rc")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}]
+
+[node name="enemy" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_d8mak")
+score_value = 20
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+scale = Vector2(0.4, 0.4)
+shape = SubResource("RectangleShape2D_apitr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(6.19, 6.19)
+sprite_frames = SubResource("SpriteFrames_vbhhn")
+animation = &"idle"
+frame_progress = 0.930206

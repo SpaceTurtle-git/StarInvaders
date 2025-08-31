@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://ds6ptsxuagxk8"]
+
+[ext_resource type="Script" uid="uid://dgy870qockht8" path="res://assets/scripts/level.gd" id="1_i1ucx"]
+[ext_resource type="PackedScene" uid="uid://c3pr1acuvgdk3" path="res://assets/blocks/miniblock_1.tscn" id="2_to3np"]
+[ext_resource type="PackedScene" uid="uid://c6ly6g0m2j34d" path="res://assets/blocks/miniblock_2.tscn" id="4_fepx1"]
+[ext_resource type="PackedScene" uid="uid://b83xskvs5wdwx" path="res://assets/entity/enemy3.tscn" id="4_h75mk"]
+
+[node name="Block_3" type="Node2D"]
+script = ExtResource("1_i1ucx")
+
+[node name="miniblock1" parent="." instance=ExtResource("2_to3np")]
+position = Vector2(-432, -120)
+
+[node name="miniblock6" parent="." instance=ExtResource("2_to3np")]
+position = Vector2(584, -112)
+direction = Vector2(-1, 0)
+
+[node name="miniblock2" parent="." instance=ExtResource("4_fepx1")]
+position = Vector2(-120, 96)
+direction = Vector2(-1, 0)
+
+[node name="miniblock3" parent="." instance=ExtResource("4_fepx1")]
+position = Vector2(248, 96)
+
+[node name="miniblock4" parent="." instance=ExtResource("4_fepx1")]
+position = Vector2(560, 160)
+
+[node name="miniblock5" parent="." instance=ExtResource("4_fepx1")]
+position = Vector2(-440, 168)
+direction = Vector2(-1, 0)
+
+[node name="enemy" parent="." instance=ExtResource("4_h75mk")]
+position = Vector2(640, 128)

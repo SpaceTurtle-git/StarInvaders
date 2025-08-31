@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://bihfq5pco22e0"]
+
+[ext_resource type="Script" uid="uid://bqbj4865mwggm" path="res://assets/scripts/mini_block.gd" id="1_nyoun"]
+[ext_resource type="PackedScene" uid="uid://csbek50mwdoc4" path="res://assets/entity/enemy1.tscn" id="2_nyoun"]
+[ext_resource type="PackedScene" uid="uid://dc7m7rl37cgnr" path="res://assets/entity/enemy2.tscn" id="3_0cwn4"]
+
+[node name="miniblock3" type="Node2D"]
+script = ExtResource("1_nyoun")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(904, 160)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(448, 160)
+
+[node name="enemy" parent="." instance=ExtResource("2_nyoun")]
+position = Vector2(480, 160)
+
+[node name="enemy2" parent="." instance=ExtResource("2_nyoun")]
+position = Vector2(536, 160)
+
+[node name="enemy3" parent="." instance=ExtResource("2_nyoun")]
+position = Vector2(592, 160)
+
+[node name="enemy4" parent="." instance=ExtResource("2_nyoun")]
+position = Vector2(648, 160)
+
+[node name="enemy5" parent="." instance=ExtResource("2_nyoun")]
+position = Vector2(704, 160)
+
+[node name="enemy6" parent="." instance=ExtResource("2_nyoun")]
+position = Vector2(760, 160)
+
+[node name="enemy7" parent="." instance=ExtResource("2_nyoun")]
+position = Vector2(816, 160)
+
+[node name="enemy8" parent="." instance=ExtResource("2_nyoun")]
+position = Vector2(872, 160)
+
+[node name="enemy9" parent="." instance=ExtResource("3_0cwn4")]
+position = Vector2(488, 88)
+
+[node name="enemy10" parent="." instance=ExtResource("3_0cwn4")]
+position = Vector2(560, 88)
+
+[node name="enemy11" parent="." instance=ExtResource("3_0cwn4")]
+position = Vector2(632, 88)
+
+[node name="enemy12" parent="." instance=ExtResource("3_0cwn4")]
+position = Vector2(720, 88)
+
+[node name="enemy13" parent="." instance=ExtResource("3_0cwn4")]
+position = Vector2(792, 88)
+
+[node name="enemy14" parent="." instance=ExtResource("3_0cwn4")]
+position = Vector2(864, 88)

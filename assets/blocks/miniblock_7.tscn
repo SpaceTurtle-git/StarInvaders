@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0a8c775xsdlq"]
+
+[ext_resource type="Script" uid="uid://bqbj4865mwggm" path="res://assets/scripts/mini_block.gd" id="1_82nlt"]
+[ext_resource type="PackedScene" uid="uid://csbek50mwdoc4" path="res://assets/entity/enemy1.tscn" id="2_g4jl2"]
+
+[node name="miniblock3" type="Node2D"]
+script = ExtResource("1_82nlt")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(904, 160)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(448, 160)
+
+[node name="enemy" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(480, 160)
+
+[node name="enemy2" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(536, 160)
+
+[node name="enemy3" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(592, 160)
+
+[node name="enemy4" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(648, 160)
+
+[node name="enemy5" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(704, 160)
+
+[node name="enemy6" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(760, 160)
+
+[node name="enemy7" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(816, 160)
+
+[node name="enemy8" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(872, 160)
+
+[node name="enemy9" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(480, 96)
+
+[node name="enemy10" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(536, 96)
+
+[node name="enemy11" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(592, 96)
+
+[node name="enemy12" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(648, 96)
+
+[node name="enemy13" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(704, 96)
+
+[node name="enemy14" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(760, 96)
+
+[node name="enemy15" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(816, 96)
+
+[node name="enemy16" parent="." instance=ExtResource("2_g4jl2")]
+position = Vector2(872, 96)

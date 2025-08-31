@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cca0r5j0w6rhe"]
+
+[ext_resource type="Script" uid="uid://bqbj4865mwggm" path="res://assets/scripts/mini_block.gd" id="1_7owk3"]
+[ext_resource type="PackedScene" uid="uid://b83xskvs5wdwx" path="res://assets/entity/enemy3.tscn" id="2_bdstq"]
+
+[node name="miniblock3" type="Node2D"]
+script = ExtResource("1_7owk3")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(784, 160)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(544, 160)
+
+[node name="enemy" parent="." instance=ExtResource("2_bdstq")]
+position = Vector2(584, 160)
+
+[node name="enemy2" parent="." instance=ExtResource("2_bdstq")]
+position = Vector2(664, 160)
+
+[node name="enemy3" parent="." instance=ExtResource("2_bdstq")]
+position = Vector2(744, 160)

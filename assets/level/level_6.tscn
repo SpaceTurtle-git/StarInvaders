@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3oqxu3hk2fxn"]
+
+[ext_resource type="Script" uid="uid://dgy870qockht8" path="res://assets/scripts/level.gd" id="1_k7p1g"]
+[ext_resource type="PackedScene" uid="uid://bn0yl0y75n04f" path="res://assets/blocks/miniblock_6.tscn" id="2_ww4e3"]
+[ext_resource type="PackedScene" uid="uid://bihfq5pco22e0" path="res://assets/blocks/miniblock_5.tscn" id="3_62dcq"]
+[ext_resource type="PackedScene" uid="uid://d0a8c775xsdlq" path="res://assets/blocks/miniblock_7.tscn" id="4_733ln"]
+
+[node name="Block_3" type="Node2D"]
+script = ExtResource("1_k7p1g")
+
+[node name="miniblock3" parent="." instance=ExtResource("2_ww4e3")]
+position = Vector2(-24, -8)
+move_speed = 70
+
+[node name="miniblock4" parent="." instance=ExtResource("3_62dcq")]
+position = Vector2(-424, 136)
+
+[node name="miniblock5" parent="." instance=ExtResource("4_733ln")]
+position = Vector2(368, 264)

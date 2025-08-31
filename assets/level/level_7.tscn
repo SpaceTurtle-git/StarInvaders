@@ -1,0 +1,201 @@
+[gd_scene load_steps=4 format=3 uid="uid://2endkmg6j2u3"]
+
+[ext_resource type="Script" uid="uid://dgy870qockht8" path="res://assets/scripts/level.gd" id="1_fl4oa"]
+[ext_resource type="PackedScene" uid="uid://csbek50mwdoc4" path="res://assets/entity/enemy1.tscn" id="2_kmpmo"]
+[ext_resource type="PackedScene" uid="uid://bgyvb70o1qse2" path="res://assets/blocks/miniblock_3.tscn" id="3_fl4oa"]
+
+[node name="Block_3" type="Node2D"]
+script = ExtResource("1_fl4oa")
+
+[node name="enemy" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(32, 416)
+
+[node name="enemy2" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(96, 416)
+
+[node name="enemy3" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(160, 416)
+
+[node name="enemy4" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(224, 416)
+
+[node name="enemy5" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(288, 416)
+
+[node name="enemy6" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(352, 416)
+
+[node name="enemy7" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(416, 416)
+
+[node name="enemy8" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(480, 416)
+
+[node name="enemy9" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(544, 416)
+
+[node name="enemy10" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(608, 416)
+
+[node name="enemy11" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(672, 416)
+
+[node name="enemy12" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(736, 416)
+
+[node name="enemy13" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(800, 416)
+
+[node name="enemy14" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(864, 416)
+
+[node name="enemy15" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(928, 416)
+
+[node name="enemy16" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(992, 416)
+
+[node name="enemy17" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1056, 416)
+
+[node name="enemy18" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1120, 416)
+
+[node name="enemy19" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1184, 416)
+
+[node name="enemy20" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1248, 416)
+
+[node name="enemy21" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(32, 272)
+
+[node name="enemy22" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(96, 272)
+
+[node name="enemy23" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(160, 272)
+
+[node name="enemy24" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(224, 272)
+
+[node name="enemy25" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(288, 272)
+
+[node name="enemy26" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(352, 272)
+
+[node name="enemy27" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(416, 272)
+
+[node name="enemy28" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(480, 272)
+
+[node name="enemy29" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(544, 272)
+
+[node name="enemy30" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(608, 272)
+
+[node name="enemy31" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(672, 272)
+
+[node name="enemy32" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(736, 272)
+
+[node name="enemy33" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(800, 272)
+
+[node name="enemy34" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(864, 272)
+
+[node name="enemy35" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(928, 272)
+
+[node name="enemy36" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(992, 272)
+
+[node name="enemy37" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1056, 272)
+
+[node name="enemy38" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1120, 272)
+
+[node name="enemy39" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1184, 272)
+
+[node name="enemy40" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1248, 272)
+
+[node name="enemy41" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(32, 128)
+
+[node name="enemy42" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(96, 128)
+
+[node name="enemy43" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(160, 128)
+
+[node name="enemy44" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(224, 128)
+
+[node name="enemy45" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(288, 128)
+
+[node name="enemy46" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(352, 128)
+
+[node name="enemy47" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(416, 128)
+
+[node name="enemy48" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(480, 128)
+
+[node name="enemy49" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(544, 128)
+
+[node name="enemy50" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(608, 128)
+
+[node name="enemy51" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(672, 128)
+
+[node name="enemy52" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(736, 128)
+
+[node name="enemy53" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(800, 128)
+
+[node name="enemy54" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(864, 128)
+
+[node name="enemy55" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(928, 128)
+
+[node name="enemy56" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(992, 128)
+
+[node name="enemy57" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1056, 128)
+
+[node name="enemy58" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1120, 128)
+
+[node name="enemy59" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1184, 128)
+
+[node name="enemy60" parent="." instance=ExtResource("2_kmpmo")]
+position = Vector2(1248, 128)
+
+[node name="miniblock3" parent="." instance=ExtResource("3_fl4oa")]
+position = Vector2(56, 40)
+move_speed = 70
+direction = Vector2(-1, 0)
+
+[node name="miniblock4" parent="." instance=ExtResource("3_fl4oa")]
+position = Vector2(56, 184)
+move_speed = 70
+
+[node name="miniblock5" parent="." instance=ExtResource("3_fl4oa")]
+position = Vector2(56, -112)
+move_speed = 70

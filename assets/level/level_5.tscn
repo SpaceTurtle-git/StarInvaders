@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1cq0dx6cu286"]
+
+[ext_resource type="Script" uid="uid://dgy870qockht8" path="res://assets/scripts/level.gd" id="1_wkb7i"]
+[ext_resource type="PackedScene" uid="uid://c3pr1acuvgdk3" path="res://assets/blocks/miniblock_1.tscn" id="2_ve56v"]
+[ext_resource type="PackedScene" uid="uid://csbek50mwdoc4" path="res://assets/entity/enemy1.tscn" id="3_ynfcw"]
+
+[node name="Block_3" type="Node2D"]
+script = ExtResource("1_wkb7i")
+
+[node name="miniblock1" parent="." instance=ExtResource("2_ve56v")]
+position = Vector2(-432, -120)
+
+[node name="miniblock2" parent="." instance=ExtResource("2_ve56v")]
+position = Vector2(-208, -56)
+direction = Vector2(-1, 0)
+
+[node name="miniblock3" parent="." instance=ExtResource("2_ve56v")]
+position = Vector2(-432, 8)
+
+[node name="miniblock7" parent="." instance=ExtResource("2_ve56v")]
+position = Vector2(592, 8)
+direction = Vector2(-1, 0)
+
+[node name="miniblock4" parent="." instance=ExtResource("2_ve56v")]
+position = Vector2(352, -64)
+
+[node name="miniblock6" parent="." instance=ExtResource("2_ve56v")]
+position = Vector2(592, -120)
+direction = Vector2(-1, 0)
+
+[node name="enemy" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(32, 256)
+
+[node name="enemy2" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(96, 256)
+
+[node name="enemy3" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(160, 256)
+
+[node name="enemy4" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(224, 256)
+
+[node name="enemy5" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(536, 256)
+
+[node name="enemy6" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(600, 256)
+
+[node name="enemy7" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(664, 256)
+
+[node name="enemy8" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(728, 256)
+
+[node name="enemy13" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(1056, 248)
+
+[node name="enemy14" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(1120, 248)
+
+[node name="enemy15" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(1184, 248)
+
+[node name="enemy16" parent="." instance=ExtResource("3_ynfcw")]
+position = Vector2(1248, 248)

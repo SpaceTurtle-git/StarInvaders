@@ -1,0 +1,147 @@
+[gd_scene load_steps=26 format=3 uid="uid://ctgdu8y7ak6ei"]
+
+[ext_resource type="PackedScene" uid="uid://blwslk5r7bvhs" path="res://assets/entity/player.tscn" id="1_kpi06"]
+[ext_resource type="Shader" uid="uid://dbe1c4d2d6ery" path="res://assets/shaders/star.gdshader" id="1_vesw4"]
+[ext_resource type="PackedScene" uid="uid://dyaf1qqf8546l" path="res://assets/scenes/world_boundry.tscn" id="2_dfgan"]
+[ext_resource type="Texture2D" uid="uid://dkletlfvwxroo" path="res://myassets/starsScroll.png" id="2_vesw4"]
+[ext_resource type="PackedScene" uid="uid://i0p2lgjkn1aa" path="res://assets/scenes/score.tscn" id="4_sfrgt"]
+[ext_resource type="PackedScene" uid="uid://b6wb1rnv33an1" path="res://assets/level/level_3.tscn" id="7_6rsl6"]
+[ext_resource type="PackedScene" uid="uid://mnfln70m1mcq" path="res://assets/level/level_1.tscn" id="7_ftd1h"]
+[ext_resource type="Script" uid="uid://pnfexm12r5tx" path="res://assets/scripts/waveManager.gd" id="7_xplbd"]
+[ext_resource type="Script" uid="uid://bvwl1pq3mc46c" path="res://assets/scripts/wave_cleared.gd" id="8_6rsl6"]
+[ext_resource type="PackedScene" uid="uid://w0hlnk14guh5" path="res://assets/level/level_2.tscn" id="8_xqcey"]
+[ext_resource type="PackedScene" uid="uid://ds6ptsxuagxk8" path="res://assets/level/level_4.tscn" id="10_uwelg"]
+[ext_resource type="PackedScene" uid="uid://d1cq0dx6cu286" path="res://assets/level/level_5.tscn" id="11_v3q3d"]
+[ext_resource type="PackedScene" uid="uid://c3oqxu3hk2fxn" path="res://assets/level/level_6.tscn" id="12_onyvt"]
+[ext_resource type="PackedScene" uid="uid://2endkmg6j2u3" path="res://assets/level/level_7.tscn" id="13_q5xp6"]
+[ext_resource type="PackedScene" uid="uid://cbb0wna1r7fho" path="res://assets/level/level_8.tscn" id="14_m64nd"]
+[ext_resource type="PackedScene" uid="uid://dqypvvnqvoqiq" path="res://assets/level/level_9.tscn" id="15_ye0uq"]
+[ext_resource type="Texture2D" uid="uid://cx5g6w872fbq5" path="res://myassets/waveCleared.png" id="16_k0jt7"]
+[ext_resource type="AudioStream" uid="uid://cnwh4gssfa8et" path="res://myassets/blaster-2-81267.mp3" id="18_xqcey"]
+[ext_resource type="AudioStream" uid="uid://w5kx4c47ilhb" path="res://myassets/pixel-explosion-319166.mp3" id="19_v3q3d"]
+[ext_resource type="AudioStream" uid="uid://cpw3v35wk51pl" path="res://myassets/retro-game-sfx-explosion-104422.mp3" id="20_onyvt"]
+[ext_resource type="AudioStream" uid="uid://bk48u13pr8ngn" path="res://myassets/BeepBox-Song.wav" id="21_onyvt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vesw4"]
+shader = ExtResource("1_vesw4")
+shader_parameter/scrollSpeed = 0.1
+
+[sub_resource type="Animation" id="Animation_xplbd"]
+resource_name = "new_animation"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("waveCleared:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("waveCleared:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(640, 300), Vector2(640, 360)]
+}
+
+[sub_resource type="Animation" id="Animation_6rsl6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("waveCleared:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("waveCleared:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p5d64"]
+_data = {
+&"RESET": SubResource("Animation_6rsl6"),
+&"new_animation": SubResource("Animation_xplbd")
+}
+
+[node name="main_scene" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 2
+texture_repeat = 2
+material = SubResource("ShaderMaterial_vesw4")
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_vesw4")
+
+[node name="Player" parent="." instance=ExtResource("1_kpi06")]
+position = Vector2(640, 700)
+
+[node name="left_boundry" parent="." instance=ExtResource("2_dfgan")]
+position = Vector2(0, 700)
+rotation = 1.5708
+collision_layer = 4
+
+[node name="right_boundry" parent="." instance=ExtResource("2_dfgan")]
+position = Vector2(1280, 700)
+rotation = -1.5708
+collision_layer = 4
+
+[node name="Score" parent="." instance=ExtResource("4_sfrgt")]
+position = Vector2(12, 681)
+
+[node name="waveManager" type="Node2D" parent="."]
+script = ExtResource("7_xplbd")
+waves = Array[PackedScene]([ExtResource("7_ftd1h"), ExtResource("8_xqcey"), ExtResource("7_6rsl6"), ExtResource("10_uwelg"), ExtResource("11_v3q3d"), ExtResource("12_onyvt"), ExtResource("13_q5xp6"), ExtResource("14_m64nd"), ExtResource("15_ye0uq")])
+
+[node name="waveCleared" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(640, 300)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_k0jt7")
+script = ExtResource("8_6rsl6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="waveCleared"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_p5d64")
+}
+
+[node name="fireSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_xqcey")
+volume_db = -10.0
+
+[node name="playerDie" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_v3q3d")
+volume_db = -10.0
+
+[node name="enemyDie" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_onyvt")
+volume_db = 5.0
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_onyvt")
+autoplay = true

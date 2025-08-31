@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6wb1rnv33an1"]
+
+[ext_resource type="Script" uid="uid://dgy870qockht8" path="res://assets/scripts/level.gd" id="1_pjjad"]
+[ext_resource type="PackedScene" uid="uid://c3pr1acuvgdk3" path="res://assets/blocks/miniblock_1.tscn" id="2_ryay6"]
+
+[node name="Block_3" type="Node2D"]
+script = ExtResource("1_pjjad")
+
+[node name="miniblock1" parent="." instance=ExtResource("2_ryay6")]
+position = Vector2(-432, -120)
+move_speed = 50
+direction = Vector2(-1, 0)
+
+[node name="miniblock2" parent="." instance=ExtResource("2_ryay6")]
+position = Vector2(96, -64)
+move_speed = 50
+
+[node name="miniblock3" parent="." instance=ExtResource("2_ryay6")]
+position = Vector2(576, -8)
+move_speed = 50
+direction = Vector2(-1, 0)

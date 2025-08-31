@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://w0hlnk14guh5"]
+
+[ext_resource type="Script" uid="uid://crhtbijy1frgt" path="res://assets/scripts/block.gd" id="1_kub4y"]
+[ext_resource type="PackedScene" uid="uid://csbek50mwdoc4" path="res://assets/entity/enemy1.tscn" id="2_58x36"]
+[ext_resource type="PackedScene" uid="uid://dc7m7rl37cgnr" path="res://assets/entity/enemy2.tscn" id="3_hkmtm"]
+[ext_resource type="PackedScene" uid="uid://b83xskvs5wdwx" path="res://assets/entity/enemy3.tscn" id="4_1vs8v"]
+
+[node name="Block_2" type="Node2D"]
+script = ExtResource("1_kub4y")
+move_speed = 30
+
+[node name="enemy22" parent="." instance=ExtResource("2_58x36")]
+position = Vector2(400, 248)
+
+[node name="enemy24" parent="." instance=ExtResource("2_58x36")]
+position = Vector2(560, 248)
+
+[node name="enemy25" parent="." instance=ExtResource("2_58x36")]
+position = Vector2(640, 248)
+
+[node name="enemy27" parent="." instance=ExtResource("2_58x36")]
+position = Vector2(800, 248)
+
+[node name="enemy29" parent="." instance=ExtResource("2_58x36")]
+position = Vector2(960, 248)
+
+[node name="enemy30" parent="." instance=ExtResource("2_58x36")]
+position = Vector2(240, 248)
+
+[node name="enemy" parent="." instance=ExtResource("3_hkmtm")]
+position = Vector2(240, 160)
+
+[node name="enemy3" parent="." instance=ExtResource("3_hkmtm")]
+position = Vector2(400, 160)
+
+[node name="enemy5" parent="." instance=ExtResource("3_hkmtm")]
+position = Vector2(560, 160)
+
+[node name="enemy6" parent="." instance=ExtResource("3_hkmtm")]
+position = Vector2(640, 160)
+
+[node name="enemy8" parent="." instance=ExtResource("3_hkmtm")]
+position = Vector2(800, 160)
+
+[node name="enemy10" parent="." instance=ExtResource("3_hkmtm")]
+position = Vector2(960, 160)
+
+[node name="enemy11" parent="." instance=ExtResource("4_1vs8v")]
+position = Vector2(240, 72)
+
+[node name="enemy12" parent="." instance=ExtResource("4_1vs8v")]
+position = Vector2(400, 72)
+
+[node name="enemy13" parent="." instance=ExtResource("4_1vs8v")]
+position = Vector2(560, 72)
+
+[node name="enemy16" parent="." instance=ExtResource("4_1vs8v")]
+position = Vector2(640, 72)
+
+[node name="enemy14" parent="." instance=ExtResource("4_1vs8v")]
+position = Vector2(800, 72)
+
+[node name="enemy15" parent="." instance=ExtResource("4_1vs8v")]
+position = Vector2(960, 72)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(1008, 160)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(192, 160)
